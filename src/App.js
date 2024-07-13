@@ -1,9 +1,10 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import "./styles/App.css";
 import Home from "./pages/Home";
 import MyPage from "./pages/MyPage";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +25,16 @@ function App() {
                 >
                   Learn React
                 </a>
+                <div>
+                  <Link to={"/home"}>홈으로 by Link</Link>
+                </div>
+                <div
+                  onClick={() => {
+                    navigate("/home");
+                  }}
+                >
+                  홈으로 by useNavigate
+                </div>
               </div>
             }
           />
