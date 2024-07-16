@@ -19,7 +19,6 @@ function App() {
                 <h1>세상에 이런 폰트가 나오다니 천재인듯</h1>
                 <a
                   className="App-link"
-                  href="https://reactjs.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
